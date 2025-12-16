@@ -2,62 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anthony's Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anthony Peña — Network Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Anthony's Portfolio</h1>
-    <p>Aspiring Network Engineer</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Anthony Peña</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Building reliable networks & secure infrastructure</h1>
+        <p class="hero-sub">I design, deploy and document small-to-medium network solutions with security in mind.</p>
+        <p>
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </p>
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Network engineer with a passion for cybersecurity and infrastructure design.</p>
-  </section>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="lead">Network engineer with a passion for cybersecurity, automation, and reliable infrastructure design.</p>
+        <p>I work with virtualization platforms, cloud networking, and secure services. I document systems and create diagrams that teams can follow.</p>
+      </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <article>
-      <h3>Proxmox Hypervisor Setup</h3>
-      <p>Hypervisor type1 build, and configuration. Hosting DHCP,DNS, and Webserver.</p>
-    </article>
-    <article>
-      <h3>Creation of Web Portfolio</h3>
-      <p>Creating own portfolio site.</p>
-    </article>
-    <article>
-        <h3>Creation of a Network Diagram </h3>
-        <p>Creating a network diagram for a small business.</p>
-    </article>
-    <article>
-        <h3>Creation of a VPC </h3>
-        <p>Creating a network diagram for a small business on the cloud.</p>
-    </article>
-  </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Proxmox Hypervisor Setup</h3>
+            <p>Type-1 hypervisor build and configuration hosting DHCP, DNS, and web services.</p>
+          </article>
+          <article class="card">
+            <h3>Personal Portfolio</h3>
+            <p>Modern, responsive portfolio showcasing projects and skills.</p>
+          </article>
+          <article class="card">
+            <h3>Network Diagram</h3>
+            <p>Designing a clear network diagram for a small business environment.</p>
+          </article>
+          <article class="card">
+            <h3>Cloud VPC Design</h3>
+            <p>Cloud network design for secure connectivity and scalable services.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: Anthony.Pena@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com">AnthonyKP</a></p>
-  </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Let's connect — I'm open to collaboration and opportunities.</p>
+        <p>Email: <a href="mailto:Anthony.Pena@gmail.com">Anthony.Pena@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com">AnthonyKP</a></p>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Student Name</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Anthony Peña</p>
+    </div>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

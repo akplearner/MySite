@@ -55,6 +55,17 @@ body{
 .card h3{margin-bottom:0.5rem}
 .card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(2,6,23,0.6)}
 
+/* Make cards that are anchors behave and look like cards */
+.card-link{display:block;color:inherit;text-decoration:none}
+.card-link:focus{outline:2px solid rgba(58,130,255,0.18);outline-offset:4px}
+
+/* Project page breakdown */
+.project-header{padding:2rem 0;border-bottom:1px solid rgba(255,255,255,0.03);margin-bottom:1rem}
+.project-meta{color:var(--muted);margin-top:0.25rem}
+.breakdown{display:grid;grid-template-columns:1fr;gap:1rem}
+.breakdown .section-card{background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.breakdown h4{margin:0 0 0.5rem 0}
+
 .site-footer{padding:2rem 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
 
 @media (max-width:800px){

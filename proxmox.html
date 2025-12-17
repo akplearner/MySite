@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proxmox Hypervisor Setup — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Anthony Peña</a>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container project-header">
+      <h1>Proxmox Hypervisor Setup</h1>
+      <p class="project-meta">Type-1 hypervisor build and configuration — DHCP, DNS, web services</p>
+    </section>
+
+    <section class="container">
+      <div class="breakdown">
+        <div class="section-card">
+          <h4>Overview</h4>
+          <p>Summary of the Proxmox hypervisor cluster, purpose, and scope.</p>
+        </div>
+        <div class="section-card">
+          <h4>Goals</h4>
+          <ul>
+            <li>Deploy a resilient hypervisor host</li>
+            <li>Provide DHCP and DNS services for lab networks</li>
+            <li>Host web services with proper isolation</li>
+          </ul>
+        </div>
+        <div class="section-card">
+          <h4>Architecture</h4>
+          <p>Network layout, storage choices (ZFS), and VM placement strategies.</p>
+        </div>
+        <div class="section-card">
+          <h4>Implementation Steps</h4>
+          <ol>
+            <li>Prepare hardware and install Proxmox VE</li>
+            <li>Configure ZFS storage and backups</li>
+            <li>Deploy core VMs: DHCP, DNS, reverse proxy</li>
+            <li>Harden host and VMs following checklist</li>
+          </ol>
+        </div>
+        <div class="section-card">
+          <h4>Documentation & Artifacts</h4>
+          <p>Links to playbooks, CLI snippets, diagrams, and config samples.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:1rem"><a class="btn ghost" href="index.html">← Back to projects</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; 2025 Anthony Peña</p></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
